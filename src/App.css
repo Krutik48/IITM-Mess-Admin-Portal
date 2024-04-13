@@ -1,0 +1,101 @@
+.custom-navbar {
+    background-color: #4e4ed2;
+    font-size: 1.2rem; 
+    margin-bottom: 0;
+  }
+  
+  /* Style the navbar brand for a more prominent heading */
+  .custom-navbar .navbar-brand h3 {
+    font-weight: bold;
+    margin: 0; /* Remove default margin for tighter spacing */
+    padding: 10px 20px; /* Add some padding for visual balance */
+  }
+  
+  /* Style navigation links with some beautification */
+  .custom-navbar .nav-link {
+    font-size: 1.1rem; /* Adjust font size as needed */
+    padding: 15px 25px; /* Increase padding for better spacing */
+    border-radius: 5px; /* Add subtle rounded corners */
+    text-transform: uppercase; /* Make all letters uppercase (optional) */
+    color: #ffffff; /* Adjust text color as desired */
+  }
+  
+  /* Hover effect with smooth transition and color change */
+  .custom-navbar .nav-link:hover {
+    color: #007bff !important; /* Change hover color to your preference */
+    transition: color 0.3s ease; /* Smooth transition animation */
+    animation: pulse 0.3s ease-in-out forwards;
+  }
+
+  .active{
+    font-weight: bold !important;
+  }
+
+
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Optional: Add a responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .custom-navbar {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+    .custom-navbar .nav-link {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+      padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+
+table{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+thead tr:first-child{
+  border-top: none;
+}
+
+tbody tr:last-child{
+  border-bottom: none;
+}
+
+/* table top left border radius */
+thead tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+  border: none;
+}
+
+/* table top right border radius */
+thead tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+  border: none;
+}
+
+/* table bottom left border radius */
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+  border: none;
+}
+
+/* table bottom right border radius */
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+  border: none;
+}
+
+/* table left border none */
+th:first-child, td:first-child {
+  border-left: none;
+}
+  
+  /* table right border none */
+  th:last-child, td:last-child {
+    border-right: none;
+  }

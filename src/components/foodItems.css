@@ -1,0 +1,21 @@
+.custom-input-row {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping on smaller screens */
+    margin: 0 -5px; /* Remove default gutter for cleaner spacing */
+  }
+  
+.custom-input-row > col {
+  padding: 5px; /* Add some padding for better readability */
+}
+
+.custom-input-row > col:nth-child(n+7) { /* Target the button column */
+  flex: 0 0 auto; /* Fix button width on larger screens */
+  text-align: center; /* Center align button text */
+}
+
+.custom-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
